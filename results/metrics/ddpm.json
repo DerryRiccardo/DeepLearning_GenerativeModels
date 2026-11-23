@@ -1,0 +1,43 @@
+{
+  "model": "ddpm",
+  "params": 4659777,
+  "latent_dim": "1x28x28 (dimensi citra)",
+  "T": 1000,
+  "train_time_per_epoch_s": 73.90602516250001,
+  "fid": 9.542400900274004,
+  "mode_coverage": {
+    "class_hist": [
+      0.12219999730587006,
+      0.10599999874830246,
+      0.09839999675750732,
+      0.10180000215768814,
+      0.10360000282526016,
+      0.07999999821186066,
+      0.06960000097751617,
+      0.12939999997615814,
+      0.0868000015616417,
+      0.10220000147819519
+    ],
+    "entropy_norm": 0.9935802817344666,
+    "modes_covered": 10
+  },
+  "latency_ms_batch64": 21023.181666666762,
+  "latency_ms_batch64_std": 128.80567543131116,
+  "latency_ms_batch1": 14283.745866666626,
+  "latency_ms_batch1_std": 1112.6000913990983,
+  "latency_mode": "sampling iteratif 1000 langkah",
+  "stability": {
+    "loss_cv_last_half": 0.017314635767253006,
+    "label": "Stabil / Konvergen"
+  },
+  "hparams": {
+    "epochs": 40,
+    "lr": 0.0002,
+    "batch_size": 128,
+    "T": 1000,
+    "beta_start": 0.0001,
+    "beta_end": 0.02,
+    "base_ch": 64,
+    "ema": 0.999
+  }
+}

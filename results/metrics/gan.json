@@ -1,0 +1,45 @@
+{
+  "model": "gan",
+  "params": 2019857,
+  "latent_dim": 100,
+  "train_time_per_epoch_s": 3.562057081000057,
+  "fid": 106.81312574662451,
+  "mode_coverage": {
+    "class_hist": [
+      0.13019999861717224,
+      0.09740000218153,
+      0.10000000149011612,
+      0.11180000007152557,
+      0.10999999940395355,
+      0.07400000095367432,
+      0.10320000350475311,
+      0.094200000166893,
+      0.09319999814033508,
+      0.0860000029206276
+    ],
+    "entropy_norm": 0.9954161047935486,
+    "modes_covered": 10
+  },
+  "latency_ms_batch64": 0.40657333332395257,
+  "latency_ms_batch64_std": 0.22582781648210562,
+  "latency_ms_batch1": 0.32276333319411304,
+  "latency_ms_batch1_std": 0.05014100428464263,
+  "latency_mode": "sampling satu langkah (single-pass)",
+  "stability": {
+    "g_loss_cv_last_half": 0.06101122081545039,
+    "d_loss_cv_last_half": 0.028623856080500738,
+    "final_D_x": 0.5443276773168616,
+    "final_D_G_z": 0.45594561610319845,
+    "label": "Cukup stabil"
+  },
+  "hparams": {
+    "epochs": 100,
+    "lr": 0.0002,
+    "betas": [
+      0.5,
+      0.999
+    ],
+    "batch_size": 128,
+    "z_dim": 100
+  }
+}

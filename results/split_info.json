@@ -1,0 +1,8 @@
+{
+  "train": 56000,
+  "val": 7000,
+  "test": 7000,
+  "total": 70000,
+  "dataset": "fashion_mnist",
+  "seed": 42
+}

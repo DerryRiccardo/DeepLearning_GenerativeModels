@@ -1,0 +1,94 @@
+{
+  "model": "sparse_ae",
+  "params": 435536,
+  "latent_dim": 64,
+  "train_time_per_epoch_s": 1.2251358133330845,
+  "mse": 0.008722003549337387,
+  "mse_std": 0.006818985100835562,
+  "psnr": 21.628976821899414,
+  "psnr_std": 2.966965675354004,
+  "ssim": 0.7337456564101298,
+  "ssim_std": 0.1525456616449025,
+  "latency_ms_batch64": 0.30325000019123155,
+  "latency_ms_batch64_std": 0.09404277367065049,
+  "latency_ms_batch1": 0.2971300003991928,
+  "latency_ms_batch1_std": 0.032502996821187,
+  "latency_mode": "rekonstruksi (encode + decode)",
+  "stability": {
+    "loss_cv_last_half": 0.04482592491085786,
+    "label": "Stabil / Konvergen"
+  },
+  "anomaly": {
+    "auroc": 0.7243547857142857,
+    "err_normal_mean": 0.008722003549337387,
+    "err_defect_mean": 0.01368654053658247,
+    "err_ratio": 1.5691968202590942
+  },
+  "hparams": {
+    "epochs": 30,
+    "lr": 0.001,
+    "batch_size": 128,
+    "hidden_dim": 256,
+    "latent_dim": 64,
+    "sparse_lambda": 3e-05
+  },
+  "sparsity": {
+    "active_frac_mean": 0.1907011866569519,
+    "active_units_per_sample": 48.81950378417969,
+    "dead_units": 150,
+    "l1_per_sample": 20.225934982299805
+  },
+  "gaussian_fit_sampling": {
+    "frac_negative_entries": 0.03388437628746033,
+    "frac_zero_entries_real": 0.061745535582304,
+    "fid": 173.02367643568795,
+    "mode_coverage": {
+      "class_hist": [
+        0.13979999721050262,
+        0.0142000000923872,
+        0.1103999987244606,
+        0.10239999741315842,
+        0.12359999865293503,
+        0.05779999867081642,
+        0.17159999907016754,
+        0.06880000233650208,
+        0.18639999628067017,
+        0.02500000037252903
+      ],
+      "entropy_norm": 0.9238553047180176,
+      "modes_covered": 9
+    }
+  },
+  "lambda_sweep": [
+    {
+      "lambda": 0.0,
+      "mse": 0.012713420204818249,
+      "ssim": 0.6553490684858306,
+      "active_frac_mean": 0.521066427230835
+    },
+    {
+      "lambda": 1e-05,
+      "mse": 0.012468974106013775,
+      "ssim": 0.6575549284754818,
+      "active_frac_mean": 0.24824415147304535
+    },
+    {
+      "lambda": 3e-05,
+      "mse": 0.013207405805587769,
+      "ssim": 0.6404157618023417,
+      "active_frac_mean": 0.1421504020690918
+    },
+    {
+      "lambda": 0.0001,
+      "mse": 0.017934953793883324,
+      "ssim": 0.5703547628655282,
+      "active_frac_mean": 0.03812304884195328
+    },
+    {
+      "lambda": 0.001,
+      "mse": 0.03006351739168167,
+      "ssim": 0.4268780034440585,
+      "active_frac_mean": 0.012468750588595867
+    }
+  ]
+}

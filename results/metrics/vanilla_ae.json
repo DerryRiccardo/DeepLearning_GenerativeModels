@@ -1,0 +1,65 @@
+{
+  "model": "vanilla_ae",
+  "params": 435536,
+  "latent_dim": 64,
+  "train_time_per_epoch_s": 1.504154683333339,
+  "mse": 0.008188818581402302,
+  "mse_std": 0.006497066002339125,
+  "psnr": 21.931360244750977,
+  "psnr_std": 3.0078284740448,
+  "ssim": 0.7416948181544788,
+  "ssim_std": 0.1487076530658877,
+  "latency_ms_batch64": 0.3464766666184005,
+  "latency_ms_batch64_std": 0.0715687533784807,
+  "latency_ms_batch1": 0.3523433333612047,
+  "latency_ms_batch1_std": 0.06432665437340841,
+  "latency_mode": "rekonstruksi (encode + decode)",
+  "stability": {
+    "loss_cv_last_half": 0.03512209978967569,
+    "label": "Stabil / Konvergen"
+  },
+  "anomaly": {
+    "auroc": 0.7287426020408163,
+    "err_normal_mean": 0.008188819512724876,
+    "err_defect_mean": 0.01314280740916729,
+    "err_ratio": 1.6049697399139404
+  },
+  "hparams": {
+    "epochs": 30,
+    "lr": 0.001,
+    "batch_size": 128,
+    "hidden_dim": 256,
+    "latent_dim": 64
+  },
+  "sparsity": {
+    "active_frac_mean": 0.5272383093833923,
+    "active_units_per_sample": 134.97300720214844,
+    "dead_units": 86,
+    "l1_per_sample": 255.47093200683594
+  },
+  "gaussian_fit_sampling": {
+    "frac_negative_entries": 0.02446874976158142,
+    "frac_zero_entries_real": 0.33943304419517517,
+    "fid": 165.29016430951333,
+    "mode_coverage": {
+      "class_hist": [
+        0.12479999661445618,
+        0.03959999978542328,
+        0.13199999928474426,
+        0.12919999659061432,
+        0.15440000593662262,
+        0.05860000103712082,
+        0.11599999666213989,
+        0.04919999837875366,
+        0.1703999936580658,
+        0.025800000876188278
+      ],
+      "entropy_norm": 0.9415227770805359,
+      "modes_covered": 10
+    }
+  },
+  "intra_class": {
+    "var_ratio": 0.8331017017364502,
+    "closer_to_class_mean": 0.007571428548544645
+  }
+}

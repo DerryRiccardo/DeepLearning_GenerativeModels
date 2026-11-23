@@ -1,0 +1,12 @@
+{
+  "model": "mlp_classifier",
+  "test_acc": 0.8898571428571429,
+  "params": 218058,
+  "target_reached": true,
+  "train_time_per_epoch_s": 1.059379156521691,
+  "hparams": {
+    "epochs": 23,
+    "lr": 0.001,
+    "batch_size": 128
+  }
+}

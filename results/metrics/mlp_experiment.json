@@ -1,0 +1,108 @@
+{
+  "stage1_test_acc": 0.8898571428571429,
+  "weight_analysis": {
+    "W1": {
+      "shape": [
+        256,
+        784
+      ],
+      "rank": 256,
+      "nullspace_dim_input": 528,
+      "orth_err_WtW": 14.235608854676459,
+      "condition_number": 37.905482247375076,
+      "rel_diff_transpose_vs_pinv": 2.499931788201691
+    },
+    "W2": {
+      "shape": [
+        64,
+        256
+      ],
+      "rank": 64,
+      "nullspace_dim_input": 192,
+      "orth_err_WtW": 3.890108075563603,
+      "condition_number": 16.94787017468165,
+      "rel_diff_transpose_vs_pinv": 1.4253700954239048
+    },
+    "W3": {
+      "shape": [
+        10,
+        64
+      ],
+      "rank": 10,
+      "nullspace_dim_input": 54,
+      "orth_err_WtW": 1.6522375493715813,
+      "condition_number": 2.832914828301226,
+      "rel_diff_transpose_vs_pinv": 2.134850566062634
+    }
+  },
+  "relu_information_loss": {
+    "zero_frac_h1": 0.7342343926429749,
+    "zero_frac_z": 0.4954844117164612
+  },
+  "stage2_transpose_from_class": {
+    "corr_with_class_mean": [
+      -0.07976097564270443,
+      0.11429307298969173,
+      0.16996056768804696,
+      0.09357179874766454,
+      0.2805202213119634,
+      0.22716650660158105,
+      0.011964402571619482,
+      0.3382257501909951,
+      0.13039507248910767,
+      0.23673858614572188
+    ],
+    "mean_corr_with_class_mean": 0.15230750030936874,
+    "mean_pairwise_corr_between_classes": 0.2983090635898302,
+    "classifier_recognizes_own_class": 0.699999988079071
+  },
+  "stage3_transpose_from_latent": {
+    "mse": 0.28824689984321594,
+    "psnr": 5.455574989318848,
+    "ssim": 0.06562996088353727
+  },
+  "stage3_control_pseudo_inverse": {
+    "mse": 0.18593990802764893,
+    "psnr": 8.041179656982422,
+    "ssim": 0.017353633843747024
+  },
+  "stage4_frozen_mlp_decoder": {
+    "mse": 0.01745506376028061,
+    "mse_std": 0.011396300047636032,
+    "psnr": 18.353105545043945,
+    "psnr_std": 2.5840063095092773,
+    "ssim": 0.5973113248816753,
+    "ssim_std": 0.18047306932206422,
+    "var_ratio": 0.6752572059631348,
+    "closer_to_class_mean": 0.17914286255836487
+  },
+  "stage4_vanilla_ae_same_latent64": {
+    "mse": 0.008188818581402302,
+    "psnr": 21.931360244750977,
+    "ssim": 0.7416948181544788,
+    "var_ratio": 0.8331017017364502,
+    "closer_to_class_mean": 0.007571428548544645
+  },
+  "stage5_prior_sampling_mlp": {
+    "frac_negative_entries": 0.22299374639987946,
+    "frac_zero_entries_real": 0.4954017996788025,
+    "mean_max_confidence": 0.7057469487190247,
+    "mode_coverage": {
+      "class_hist": [
+        0.16940000653266907,
+        0.033799998462200165,
+        0.20900000631809235,
+        0.10260000079870224,
+        0.12219999730587006,
+        0.07479999959468842,
+        0.1387999951839447,
+        0.03180000185966492,
+        0.08560000360012054,
+        0.03200000151991844
+      ],
+      "entropy_norm": 0.925557017326355,
+      "modes_covered": 10
+    },
+    "fid": 143.5057030656377
+  }
+}

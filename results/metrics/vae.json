@@ -1,0 +1,52 @@
+{
+  "model": "vae",
+  "params": 451984,
+  "latent_dim": 64,
+  "train_time_per_epoch_s": 1.5193226333329222,
+  "mse": 0.013242747634649277,
+  "mse_std": 0.009117109701037407,
+  "psnr": 19.628334045410156,
+  "psnr_std": 2.692160129547119,
+  "ssim": 0.6464811777271738,
+  "ssim_std": 0.18587775695947292,
+  "latency_ms_batch64": 0.1802333329881852,
+  "latency_ms_batch64_std": 0.03126749426066756,
+  "latency_ms_batch1": 0.1595666678137301,
+  "latency_ms_batch1_std": 0.01796335775697407,
+  "latency_mode": "sampling satu langkah (decode dari prior)",
+  "fid": 87.85804463282273,
+  "mode_coverage": {
+    "class_hist": [
+      0.10379999876022339,
+      0.08619999885559082,
+      0.06719999760389328,
+      0.12720000743865967,
+      0.08399999886751175,
+      0.11760000139474869,
+      0.0729999989271164,
+      0.1459999978542328,
+      0.12600000202655792,
+      0.0689999982714653
+    ],
+    "entropy_norm": 0.9847231507301331,
+    "modes_covered": 10
+  },
+  "stability": {
+    "loss_cv_last_half": 0.00227400445660209,
+    "label": "Stabil / Konvergen"
+  },
+  "anomaly": {
+    "auroc": 0.6983503775510204,
+    "err_normal_mean": 0.013242747634649277,
+    "err_defect_mean": 0.01907259225845337,
+    "err_ratio": 1.4402291774749756
+  },
+  "hparams": {
+    "epochs": 30,
+    "lr": 0.001,
+    "batch_size": 128,
+    "hidden_dim": 256,
+    "latent_dim": 64,
+    "beta": 1.0
+  }
+}
