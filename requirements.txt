@@ -1,0 +1,11 @@
+torch>=2.1
+torchvision>=0.16
+numpy>=1.23
+scipy>=1.10
+scikit-image>=0.21
+matplotlib>=3.7
+pytorch-fid>=0.3.0
+tqdm>=4.65
+jupyter
+ipykernel
+nbformat
